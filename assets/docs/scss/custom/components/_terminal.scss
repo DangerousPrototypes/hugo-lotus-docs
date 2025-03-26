@@ -1,0 +1,60 @@
+.docs-content .main-content {
+  .terminal {
+    margin: 1rem 0;
+    border: 2px var(--terminal-header-bg) solid;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      padding: 1rem 1rem;
+      font-weight: 700;
+      font-size: 13px;
+      background-color: var(--terminal-header-bg);
+
+      .header-dots {
+        display: flex;
+        gap: 6px;
+
+        .header-dot {
+          width: 12px;
+          height: 12px;
+          border-radius: 12px;
+        }
+      }
+
+      .header-bars {
+        display: flex;
+        margin-left: auto;
+        flex-direction: column;
+        gap: 3px;
+
+        .header-bar {
+          background-color: #aaa;
+          height: 3px;
+          width: 17px;
+        }
+      }
+    }
+
+    .highlight {
+      padding: 1rem !important;
+      margin: 0rem !important;
+      background-color: var(--terminal-content-bg) !important;
+      border-radius: 0 !important;
+
+      code {
+        padding: 0rem !important;
+        background-color: var(--terminal-content-bg) !important;
+
+      }
+    }
+
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+}
