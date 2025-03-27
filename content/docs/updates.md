@@ -40,7 +40,7 @@ Nice looking console view, and light/dark modes work great.
 
 ### Console HTML formatting
 
-The color text output from our device is processed from VT100 to HTML. There are three ways to handle the color in docs.
+The color text output from our device is processed from VT100 to HTML. There are two ways to handle the color in docs.
 
 ```html
 <span style="color:#96cb59">I2C></span>
@@ -68,10 +68,17 @@ Firmware
 For docusaurus we have an annoying two step process. The colors are replaced by className and the class names are added to docusaurus CSS.
 
 ```
-TDB
+.bp-prompt{ color:#96cb59;} 
+.bp-info{ color:#bfa530;} 
+.bp-error{ color:#bf3030;} 
+.bp-float{ color:#53a6e6;}
+
+.bp-pre{
+	color: #FFFFFF;
+}
 ```
 
-There is another Python converter I'd like to try, but I need a few mintues to provide sample output. This may be the best bet.
+These are the HTML classes for this method (not preferred).
 
 ## Header
 If at all possible some links on the header for desktop view, same as old site
