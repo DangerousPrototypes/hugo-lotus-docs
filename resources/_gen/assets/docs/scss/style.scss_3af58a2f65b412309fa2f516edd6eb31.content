@@ -10920,6 +10920,8 @@ table td:last-child, table th:last-child {
         height: 3px;
         width: 17px; }
   .docs-content .main-content .terminal .highlight {
+    font-family: var(--bs-font-sans-serif);
+    font-size: 17px;
     padding: 1rem !important;
     margin: 0rem !important;
     background-color: var(--terminal-content-bg) !important;
@@ -10927,6 +10929,16 @@ table td:last-child, table th:last-child {
     .docs-content .main-content .terminal .highlight code {
       padding: 0rem !important;
       background-color: var(--terminal-content-bg) !important; }
+    .docs-content .main-content .terminal .highlight .bp-prompt {
+      color: #96cb59; }
+    .docs-content .main-content .terminal .highlight .bp-info {
+      color: #bfa530; }
+    .docs-content .main-content .terminal .highlight .bp-error {
+      color: #bf3030; }
+    .docs-content .main-content .terminal .highlight .bp-float {
+      color: #53a6e6; }
+    .docs-content .main-content .terminal .highlight .bp-pre {
+      color: #FFFFFF; }
   .docs-content .main-content .terminal p {
     margin-bottom: 0 !important; }
 

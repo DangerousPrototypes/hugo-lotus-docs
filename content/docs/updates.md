@@ -13,6 +13,7 @@ weight = 1
 
 ![](images/docs/cmd-toolbar.png)
 
+With `style`:
 
 {{% term "Bus Pirate [/dev/ttyS0]" %}}
 <span style="color:#96cb59">I2C></span>
@@ -33,6 +34,29 @@ y D
 a<span style="color:#96cb59">I2C></span>
 <span style="color:#96cb59">I2C></span>
 {{% /term %}}
+
+With `class`:
+
+{{% term "Bus Pirate [/dev/ttyS0]" %}}
+<span class="bp-prompt">HiZ></span> i<br/>
+<span class="bp-info"><br/>
+Bus Pirate 5 REV6<br/>
+Firmware 
+<span class="bp-float">v0.1</span>
+
+</span> 
+(<span class="bp-float">unknown</span>), Bootloader 
+<span class="bp-float">N/A</span>
+<br/>
+{{% /term %}}
+
+{{% alert icon="❓" context="danger" %}}
+QUESTION
+
+Should we create a different shortcode to process the `class` version? The
+format looks a bit broken, but I'm not sure this is how it should look. Also,
+maybe automatically replace `className` with `class` in the shortcode?
+{{% /alert %}}
 
 Nice looking console view, and light/dark modes work great.
 - Disable any syntax highlighting
@@ -67,7 +91,7 @@ Firmware
 
 For docusaurus we have an annoying two step process. The colors are replaced by className and the class names are added to docusaurus CSS.
 
-```
+```css
 .bp-prompt{ color:#96cb59;} 
 .bp-info{ color:#bfa530;} 
 .bp-error{ color:#bf3030;} 

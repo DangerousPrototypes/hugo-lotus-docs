@@ -12,5 +12,5 @@
       <div class="header-bar"></div>
     </div>
   </div>
-  {{ highlight (trim .InnerDeindent "\n\r") "bash" "" }}
+  <pre class="highlight">{{ trim .InnerDeindent "\n\r" | safeHTML }}</pre>
 </div>

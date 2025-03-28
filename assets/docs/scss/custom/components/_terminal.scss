@@ -5,6 +5,7 @@
     border-top-left-radius: 0.4rem;
     border-top-right-radius: 0.4rem;
 
+
     .header {
       display: flex;
       align-items: center;
@@ -41,6 +42,9 @@
     }
 
     .highlight {
+      font-family: var(--bs-font-sans-serif);
+      font-size: 17px;
+
       padding: 1rem !important;
       margin: 0rem !important;
       background-color: var(--terminal-content-bg) !important;
@@ -51,6 +55,27 @@
         background-color: var(--terminal-content-bg) !important;
 
       }
+
+      .bp-prompt {
+        color: #96cb59;
+      }
+
+      .bp-info {
+        color: #bfa530;
+      }
+
+      .bp-error {
+        color: #bf3030;
+      }
+
+      .bp-float {
+        color: #53a6e6;
+      }
+
+      .bp-pre {
+        color: #FFFFFF;
+      }
+
     }
 
     p {
