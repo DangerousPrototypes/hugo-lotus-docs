@@ -28,6 +28,9 @@ title = 'My New Hugo Site'
         darkMode        = true                                # enable dark mode option? default false
         logo = "images/logos/danger.png"
 
+    [params.footer] 
+        copyright       = "Copyright © 2025 Where Labs, LLC. Built with Open Source."
+
 [menu]
 [[menu.primary]]
     name  = "Bus Pirate v5"
@@ -53,6 +56,31 @@ title = 'My New Hugo Site'
     name  = "Contact"
     url = "https://buspirate.com/contact"
     weight = 10
+
+
+[[menu.footer]]
+    name  = "Distributors"
+    weight = 10
+
+[[menu.footer]]
+    name = "Dirty PCBs"
+    url = "https://dirtypcbs.com/store/browse/bus-pirate"
+    parent = "Distributors"
+
+[[menu.footer]]
+    name = "Docs"
+    weight = 20
+
+[[menu.footer]]
+    name = "Hardware"
+    url = "https://hardware.buspirate.com/"
+    parent = "Docs"
+
+[[menu.footer]]
+    name = "Firmware"
+    url = "https://firmware.buspirate.com/"
+    parent = "Docs"
+
 
 [markup.goldmark.renderer]
   unsafe = true

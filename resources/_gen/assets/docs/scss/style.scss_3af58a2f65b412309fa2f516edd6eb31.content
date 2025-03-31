@@ -10255,7 +10255,7 @@ i.title-icon {
 footer {
   position: relative;
   color: var(--text-muted);
-  background: var(--body-bg);
+  background: var(--top-header-bg);
   height: 58px; }
   footer .text-foot {
     color: var(--gray-500); }
@@ -11570,5 +11570,17 @@ h4:hover a,
     stroke: var(--text-default) !important; }
   .docs-content .main-content pre.mermaid text {
     fill: var(--text-default) !important; }
+
+#flexsearch-button {
+  display: flex;
+  height: 48px;
+  padding: 0 16px;
+  margin: 0 0 0 16px;
+  font-weight: 400;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px; }
+  #flexsearch-button .flexsearch-button-placeholder {
+    color: var(--form-control-placeholder-color); }
 
 /*# sourceMappingURL=style.css.map */
