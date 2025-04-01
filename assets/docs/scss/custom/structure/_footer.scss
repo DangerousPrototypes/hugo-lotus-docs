@@ -3,9 +3,11 @@
 //
 footer {
   position: relative;
-  color: var(--text-muted);
-  background: var(--top-header-bg);
+  color: var(--text-white);
+  background: var(--footer-background-color);
   height: 58px;
+
+  z-index: 5001;
 
   .text-foot {
     color: var(--gray-500);
@@ -18,7 +20,7 @@ footer {
   }
 
   a {
-    color: var(--content-link-color);
+    color: white;
   }
 
   a:hover {

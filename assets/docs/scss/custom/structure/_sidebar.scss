@@ -2,7 +2,8 @@
 // sidebar.scss
 //
 .page-wrapper {
-  height: 100vh;
+  // height: 100vh;
+  position: relative;
 
   .sidebar-wrapper {
     // box-shadow: $shadow;
@@ -11,7 +12,7 @@
     width: 300px;
     height: 100%;
     max-height: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: -300px;
     z-index: 999;
@@ -39,6 +40,7 @@
     }
 
     .sidebar-content {
+      padding-top: 90px;
       background: var(--sidebar-bg);
       max-height: calc(100% - 30px);
       height: calc(100% - 30px);
@@ -79,6 +81,9 @@
     }
 
     .sidebar-brand {
+      position: fixed;
+      z-index: 2000;
+      width: inherit;
       background: var(--top-header-bg);
       padding: 10px 20px;
       border-bottom: 1px solid var(--sidebar-border-color);
@@ -496,7 +501,7 @@
   left: 0;
   right: 0;
   padding: 9px 24px 9px 20px !important;
-  border-right: 1px solid var(--sidebar-border-color);
+  // border-right: 1px solid var(--sidebar-border-color);
   height: 60px;
 
   @media(max-width: 425px) {

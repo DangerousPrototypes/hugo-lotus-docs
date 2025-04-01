@@ -342,6 +342,9 @@ $btn-link-hover-color: var(--#{$prefix}link-hover-color);
   --sidebar-directory-icon: var(--dir-right);
   --sidebar-file-icon: var(--dash);
 
+  // Footer
+  --footer-background-color: #303846;
+
   // Terminal
   --terminal-header-bg: var(--gray-200);
   --terminal-content-bg: var(--black);

@@ -5,8 +5,8 @@
     <div class="row justify-content-center align-items-start pb-5">
       {{ range site.Menus.footer }}
       <div class="col-2">
-        <div class="text-center mx-md-2">
-          <div class="fw-bold mb-2">{{ .Name }}</div>
+        <div class="mx-md-2">
+          <div class="fw-bold mb-3 text-white">{{ .Name }}</div>
           {{ range .Children }}
           <div>
             <a class="mb-0" {{ with .URL }}href="{{ . }}" {{ end }}>
