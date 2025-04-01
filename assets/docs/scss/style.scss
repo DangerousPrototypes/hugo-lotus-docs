@@ -89,3 +89,12 @@ $code-block-padding-top: {{ if eq .Site.Params.docs.prism true -}}0{{ else }}1.2
         color: var(--form-control-placeholder-color);
     }
 }
+
+.top-header-link {
+  color: white;
+  font-weight: bold;
+
+  &:hover {
+    color: var(--primary);
+  }
+}

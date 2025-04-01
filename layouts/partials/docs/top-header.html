@@ -43,6 +43,13 @@
                     </button>
                 {{ end }}
             {{ end -}}
+            <div class="ms-5 d-none d-xl-flex items-center gap-4">
+              {{ range site.Menus.primary }}
+                <a href="{{ .URL }}" class="top-header-link">
+                  {{ .Name }}
+                </a>
+              {{ end }}
+            </div>
         </div>
 
         <div class="d-flex align-items-center">
