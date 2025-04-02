@@ -10904,7 +10904,8 @@ table td:last-child, table th:last-child {
   margin: 1rem 0;
   border: 2px var(--terminal-header-bg) solid;
   border-top-left-radius: 0.4rem;
-  border-top-right-radius: 0.4rem; }
+  border-top-right-radius: 0.4rem;
+  color: white; }
   .docs-content .main-content .terminal .header {
     display: flex;
     align-items: center;
