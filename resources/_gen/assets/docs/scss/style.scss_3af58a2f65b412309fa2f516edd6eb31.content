@@ -10261,7 +10261,8 @@ footer {
   color: var(--text-white);
   background: var(--footer-background-color);
   height: 58px;
-  z-index: 5001; }
+  z-index: 5001;
+  font-size: 17px; }
   footer .text-foot {
     color: var(--gray-500); }
   footer .footer-head {
@@ -10275,6 +10276,10 @@ footer {
     text-decoration: underline 1.5px var(--primary-200);
     text-underline-offset: 3px !important;
     transition: 0s !important; }
+  footer .footer-menu-title {
+    margin-bottom: 17px; }
+  footer .footer-menu-item {
+    line-height: 34px; }
 
 .footnote-backref {
   font-size: 1.1rem;
